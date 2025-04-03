@@ -188,6 +188,11 @@ button:hover {
   color: #3A3A3A;
 }
 
+#header,
+#nav {
+  min-height: 80px; /* Adjust to match final content */
+}
+
 /* Language Switch Styling */
 #language-switch {
   position: absolute;
