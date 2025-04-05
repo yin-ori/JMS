@@ -188,11 +188,6 @@ button:hover {
   color: #3A3A3A;
 }
 
-#header,
-#nav {
-  min-height: 80px; /* Adjust to match final content */
-}
-
 /* Language Switch Styling */
 #language-switch {
   position: absolute;
@@ -212,6 +207,12 @@ button:hover {
   text-decoration: underline;
 }
 
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  header {
+    padding-top: 60px; 
+  }
+
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
@@ -221,6 +222,15 @@ button:hover {
 
   section h2 {
     border-bottom-color: #555;
+  }
+
+  header h1,
+  nav a {
+    color: #DDDDDD;
+  }
+
+  nav a:hover {
+    background-color: #333;
   }
 
   .text-box {
